@@ -1,0 +1,14 @@
+.container {
+  padding: 8vh 8vw;
+  background: linear-gradient(
+    to right bottom,
+    var(--primary-color-light),
+    var(--primary-color-dark)
+  );
+  background-repeat: no-repeat;
+  box-shadow: 0 0 1em 0.1em rgba(#000, 0.4);
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}

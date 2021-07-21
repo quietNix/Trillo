@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flex Focused website">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    <title>trillo &raquo; Flex Focused Website</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <header class="header">
+            <img src="./img/logo.png" alt="" class="header__logo">
+            <form action="#" class="header-search">
+                <input type="text" class="header-search__input" placeholder="Search Hotels">
+                <button class="header-search__button">
+                    <svg class="header-search__button_icon">
+                        <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="header-nav">
+
+                <div class="header-nav-box">
+                    <svg class="header-nav-box__icon">
+                        <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="header-nav-box__notification">7</span>
+                </div>
+
+                <div class="header-nav-box">
+                    <svg class="header-nav-box__icon">
+                        <use xlink:href="./img/sprite.svg#icon-message"></use>
+                    </svg>
+                    <span class="header-nav-box__notification">13</span>
+                    <ul class="header-nav-box-chat">
+                        <li class="header-nav-box-chat-item">
+                            <img class="header-nav-box-chat-item__profilePic" src="./img/user-1.jpg" alt="user3 photo">
+                            <span class="header-nav-box-chat-item__text">
+                                <h3 class="header-nav-box-chat-item__text_heading">
+                                    Abhishek gupta
+                                </h3>
+                                <p class="header-nav-box-chat-item__text_message">
+                                    Hi Ashutosh, How are you?
+                                </p>
+                            </span>
+                        </li>
+                        <li class="header-nav-box-chat-item">
+                            <img class="header-nav-box-chat-item__profilePic" src="./img/user-2.jpg" alt="user3 photo">
+                            <div class="header-nav-box-chat-item__text">
+                                <h3 class="header-nav-box-chat-item__text_heading">
+                                    John Jimskey
+                                </h3>
+                                <p class="header-nav-box-chat-item__text_message">
+                                    Hi lorem, How are you?
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-nav-box">
+                    <img src="./img/user.jpg" alt="" class="header-nav-box__userPhoto">
+                    <span class="header-nav-box__userName">Nikhil</span>
+                    <ul class="header-nav-box-profile">
+                        <li class="header-nav-box-profile__item">Profile</li>
+                        <li class="header-nav-box-profile__item">My Bookings</li>
+                        <li class="header-nav-box-profile__item">My Wallet</li>
+                        <li class="header-nav-box-profile__item">Make Payment</li>
+                        <li class="header-nav-box-profile__item">Logout</li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+
+        <section class="content">
+
+            <section class="sidebar">
+                <nav class="sidebar-nav">
+                    <a href="#" class="sidebar-nav__link sidebar-nav__link--active">
+                        <svg class="sidebar-nav__link_icon">
+                            <use xlink:href="./img/sprite.svg#icon-home"></use> //one file, so one http request
+                        </svg>
+                        <span>Hotel</span>
+                    </a>
+                    <a href="#" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__link_icon">
+                            <use xlink:href="./img/sprite.svg#icon-aircraft-take-off"></use> //one file, so one
+                            http request
+                        </svg>
+                        <span>Flight</span>
+                    </a>
+                    <a href="#" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__link_icon">
+                            <use xlink:href="./img/sprite.svg#icon-key"></use> //one file, so one http request
+                        </svg>
+                        <span>Car Rental</span>
+                    </a>
+                    <a href="#" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__link_icon">
+                            <use xlink:href="./img/sprite.svg#icon-star"></use> //one file, so one http request
+                        </svg>
+                        <span>Tools</span>
+                    </a>
+                </nav>
+                <span class="sidebar__legal">
+                    &copy; 2021 by <a href="https://github.com/quietnix" target="blank" class="sidebar__legal_btn">
+                        quietnix</a>. All rights reserved.
+                </span>
+            </section>
+
+
+            <main class="hotel-view">
+
+                <section class="gallery">
+                    <figure class="gallery__item">
+                        <img src="./img/hotel-1.jpg" alt="Photo1" class="gallery__item_photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/hotel-2.jpg" alt="Photo2" class="gallery__item_photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/hotel-3.jpg" alt="Photo3" class="gallery__item_photo">
+                    </figure>
+                </section>
+
+                <section class="overview">
+                    <h1 class="overview__heading">
+                        Hotel Bat Cave
+                    </h1>
+                    <div class="overview-stars">
+                        <svg class="overview-stars__icon">
+                            <use xlink:href="./img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview-stars__icon">
+                            <use xlink:href="./img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview-stars__icon">
+                            <use xlink:href="./img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview-stars__icon">
+                            <use xlink:href="./img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview-stars__icon">
+                            <use xlink:href="./img/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <div class="overview-location">
+                        <svg class="overview-location__icon">
+                            <use xlink:href="./img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="shared__animated-btn">Gotham, Jersey.</button>
+                    </div>
+                    <span class="overview__rating">
+                        <p class="overview__rating_average">8.6</p>
+                        <p class="overview__rating_count">429 votes</p>
+                    </span>
+                </section>
+
+
+                <section class="detail">
+
+                    <section class="description">
+                        <p class="description__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officiis laboriosam eius?
+                            Ipsum ad, numquam reprehenderit temporibus sequi error ipsa libero saepe magni pariatur,
+                            inventore a fuga sunt, consectetur tenetur.
+                        </p>
+                        <p class="description__para">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores aperiam eum repellendus
+                            nam non commodi facilis blanditiis labore provident ipsam necessitatibus velit, quaerat
+                            laudantium at sunt libero
+                        </p>
+                        <ul class="description-features">
+                            <li class="description-features__item">Close to the beach</li>
+                            <li class="description-features__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="description-features__item">Lorem ipsum dolor sit.</li>
+                            <li class="description-features__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="description-features__item">Lorem, ipsum dolor.</li>
+                            <li class="description-features__item">Lorem ipsum dolor sit.</li>
+                            <li class="description-features__item">Lorem ipsum dolor sit amet.</li>
+                            <li class="description-features__item">Lorem, ipsum.</li>
+                        </ul>
+                        <div class="description-recommend">
+                            <p class="description-recommend__count">
+                                Lorem ipsum tur adipisicing.
+                            </p>
+                            <figure class="description-recommend__user">
+                                <img src="./img/user-1.jpg" alt="user1" class="description-recommend__user_photos">
+                                <img src="./img/user-2.jpg" alt="user2" class="description-recommend__user_photos">
+                                <img src="./img/user-3.jpg" alt="user3" class="description-recommend__user_photos">
+                                <img src="./img/user-4.jpg" alt="user4" class="description-recommend__user_photos">
+                            </figure>
+                        </div>
+                    </section>
+
+                    <!-- exceptional -->
+                    <section class="reviews">
+                        <figure class="reviews__review">
+                            <blockquote class="reviews__review_text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nulla dignissimos
+                                illum omnis enim laboriosam quis inventore, quam quaerat.
+                            </blockquote>
+
+                            <figcaption class="reviews__review-user">
+                                <img src="./img/user-1.jpg" alt="user1" class="reviews__review-user__photo">
+                                <span class="reviews__review-user__detail">
+                                    <p class="reviews__review-user__detail_name">Abhishek Gupta</p>
+                                    <p class="reviews__review-user__detail_date">February, 10, 2020</p>
+                                </span>
+                                <span class="reviews__review-user__rating">7.8</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="reviews__review">
+                            <blockquote class="reviews__review_text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nulla dignissimos
+                                illum omnis enim laboriosam quis inventore, quam quaerat.
+                            </blockquote>
+
+                            <figcaption class="reviews__review-user">
+                                <img src="./img/user-2.jpg" alt="user1" class="reviews__review-user__photo">
+                                <span class="reviews__review-user__detail">
+                                    <p class="reviews__review-user__detail_name">Chetan Thakur</p>
+                                    <p class="reviews__review-user__detail_date">January, 30, 2021</p>
+                                </span>
+                                <span class="reviews__review-user__rating">8.8</span>
+                            </figcaption>
+                        </figure>
+                        <button class="shared__animated-btn reviews__btn">
+                            Show more
+                            <span class="reviews__btn__arrow">&rarr;</span>
+                        </button>
+                    </section>
+
+                </section>
+
+                <section class="cta">
+                    <h2 class="cta__text">
+                        Good news! We have 4 rooms available.
+                    </h2>
+                    <button class="cta__btn">
+                        <span class="cta__btn_visible">Call to action</span>
+                        <span class="cta__btn_hidden">Only 4 rooms left</span>
+                    </button>
+                </section>
+
+            </main>
+
+
+
+        </section>
+
+
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+.cta {
+  padding: 3.5vh 0;
+  text-align: center;
+
+  &__text {
+    font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 2);
+    line-height: 1.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5vh;
+  }
+
+  &__btn {
+    font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1.2);
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(
+      to right,
+      var(--primary-color-light),
+      var(--primary-color-dark)
+    );
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    & > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all 0.2s;
+    }
+
+    &_visible {
+      padding: 1em 3em;
+    }
+
+    &_hidden {
+      position: absolute;
+      padding: 1em 0;
+      top: -100%;
+      left: 0%;
+    }
+
+    &:hover {
+      background: linear-gradient(
+        to left,
+        var(--primary-color-light),
+        var(--primary-color-dark)
+      );
+    }
+
+    &:hover &_visible {
+      transform: translateY(100%);
+    }
+
+    &:hover &_hidden {
+      top: 0%;
+    }
+  }
+}

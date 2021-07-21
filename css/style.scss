@@ -1,0 +1,54 @@
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+
+@import "../sass/base/reset";
+@import "../sass/base/typography";
+
+//shared components
+@import "../sass/components/shared/shared__animated-btn";
+
+// body{ .container }
+@import "../sass/layout/container";
+
+// .container{ .header & content }
+@import "../sass/layout/header";
+
+// Content{ .sidebar & .hotel-view }
+.content {
+  display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+
+@import "../sass/layout/sidebar";
+
+// hotel-view{ gallery & overview & detail & cta }
+.hotel-view {
+  background: #fff;
+  flex: 1;
+}
+
+@import "../sass/components/gallery";
+
+@import "../sass/components/overview";
+
+// detail{ description & reviews }
+.detail {
+  display: flex;
+  align-items: flex-start;
+  padding: 2vw;
+  background-color: var(--color-grey-light1);
+  border-bottom: var(--line);
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+
+@import "../sass/components/description";
+
+@import "../sass/components/review";
+
+@import "../sass/components/cta";

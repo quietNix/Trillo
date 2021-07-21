@@ -1,0 +1,92 @@
+.overview {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: var(--line);
+
+  &__heading {
+    font-size: calc(max(0rem, 0.3rem + 0.7vw) * 1.5);
+    line-height: 1em;
+    font-weight: 300;
+    padding: 1em 0 1em .6em;
+    letter-spacing: 0.1em;
+    color: var(--color-grey-dark3);
+    text-transform: uppercase;
+  }
+
+  &-stars {      
+    display: flex;
+    margin-left: 1.5vw;
+    margin-right: auto;
+    &__icon {
+      width: calc(0.3rem + 0.7vw);
+      height: calc(0.3rem + 0.7vw);
+      fill: var(--primary-color);
+    }
+  }
+
+  &-location {
+    font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1);
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      width: 1.2em;
+      height: 1.2em;
+      fill: var(--primary-color);
+    }
+    // &__btn {} //shared component... sc__button__animated
+  }
+
+  &__rating {
+    background-color: var(--primary-color);
+    margin-left: calc(clamp(9px, max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1.6, 3vmax));
+    color: #fff;
+    align-self: stretch;
+    padding: 1em 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &_average {
+      font-size: calc(clamp(9px, max(0.5rem + 0.5vw, 0.3rem + 0.7vw) * 1.6, 3vmax));
+      line-height: 1.2em;
+      font-weight: 300;
+    }
+
+    &_count {
+      font-size: calc(clamp(9px, max(0.5rem + 0.5vw, 0.3rem + 0.7vw) * .6, 3vmax));
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@include respond(phone-small) {
+  .overview {
+    position: relative;
+
+    &__heading{
+      margin-right: auto;
+    }
+
+    &-stars{
+      position: absolute;
+      top: 10%;
+    }
+    &__rating{
+      &__count{
+        display: none;
+      }
+
+    }
+  }
+}
+
+
+// todo
+// diff beten calc(clamp(9px, max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1.6, 3vmax));
+// clamp(9px, calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1.6), 3vmax);
+// and if keeping that max is worth it.

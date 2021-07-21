@@ -1,0 +1,12 @@
+.gallery {
+  display: flex;
+  // justify-content: space-between;
+
+  &__item {
+    
+    &_photo {
+      width: 100%;
+      display: block;
+    }
+  }
+}
